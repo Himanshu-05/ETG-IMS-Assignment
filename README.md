@@ -2,7 +2,7 @@
 Inventory Management System created under ETG's skill india python for ML/AI internship
 ### This inventory management system emulates the working of an inventory management system in a pharmacy
 This inventory management system project consists of 2 files for adding new products to the inventory and for purchasing products that are available in the inventory.
-It uses a NO-SQL database for storing the product details, namely JSON. There are 2 files, record.json and sales.json to indicate the products available in the inventory as well as the total sales made throughout the time the portal was open respectively
+It uses a NO-SQL database for storing the product details, namely JSON. There are 2 files, record.json and sales.json to indicate the products available in the inventory as well as the total sales made respectively.
 
 ## Add New Products.ipynb
 - Reads the data from record.json and stores it in a python dictionary
@@ -16,3 +16,13 @@ It uses a NO-SQL database for storing the product details, namely JSON. There ar
 - Generated the catalog and bill requested by the user in a tabular format for easy viewability
 - Removes the product from the inventory completely if its quantity reaches 0 after a purchase is made
 - Prints separate bills for every customer and also a prints the total number of customers visited when the portal is exited.
+
+## record.json
+- NO-SQL database to store the items in the inventory 
+- Each medicine in the pharmacy inventory is assigned with a unique product ID
+- The database holds the name, manufacturing date, expiry date, price and quantity of each product
+
+## sales.json
+- NO-SQL database to store the items purchased during the time the portal was open in a chronological order
+- All details of each purchase, namely the product ID, name, manufacturing date, expiry data, price and quantity purchased is stored
+- The purchases are indexed by the time they occured.
